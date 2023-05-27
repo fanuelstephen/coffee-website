@@ -38,7 +38,9 @@ body {
 .home,
 .about,
 .menu,
-.product {
+.product,
+.riview,
+.contact {
   padding: 2rem 7%;
 }
 .btn {
@@ -332,38 +334,84 @@ body {
 /* -------------------product section ends here */
 
 /* ------------------review section start here */
-.riview .box-container {
+.review .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
-.riview .box-container .box {
+.review .box-container .box {
   border: var(--border);
   text-align: center;
   padding: 3rem 2rem;
 }
-.riview .box-container .box p {
+.review .box-container .box p {
   font-size: 1.5rem;
   line-height: 1.8;
   color: #ccc;
   padding: 2rem 0;
 }
-.riview .box-container .box .user {
+.review .box-container .box .user {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
   object-fit: cover;
 }
-.riview .box-container .box h3 {
+.review .box-container .box h3 {
   padding: 1rem 0;
   font-size: 2rem;
   color: #fff;
 }
-.riview .box-container .box .stars i {
+.review .box-container .box .stars i {
   font-size: 1.6rem;
   color: var(--main-color);
 }
-/* ------------------review section ends here */
+/* ------------------//review section ends here */
+/* -------------contanct section start here */
+.contact .row {
+  display: flex;
+  align-items: center;
+  background: var(--black);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+}
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.contact .row form h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #fff;
+}
+.contact .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg);
+  border: var(--border);
+}
+.contact .row form .inputBox span {
+  font-size: 2rem;
+  color: #fff;
+  padding-left: 2rem;
+}
+.contact .row form .inputBox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+}
+/* -------------contanct section ends here */
 /* ********************************media queries */
 @media (max-width: 991px) {
   html {
