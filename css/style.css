@@ -40,7 +40,8 @@ body {
 .menu,
 .product,
 .riview,
-.contact {
+.contact,
+.blogs {
   padding: 2rem 7%;
 }
 .btn {
@@ -412,6 +413,54 @@ body {
   background: none;
 }
 /* -------------contanct section ends here */
+/* --------------blogs start here */
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.blogs .box-container .box {
+  border: var(--border);
+  transition: all 0.7s;
+  transition: ease 0.4s;
+}
+.blogs .box-container .box .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+.blogs .box-container .box .content {
+  padding: 2rem;
+}
+.blogs .box-container .box .title {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+.blogs .box-container .box .title:hover {
+  color: var(--main-color);
+}
+.blogs .box-container .box .content span {
+  color: var(--main-color);
+  display: block;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.blogs .box-container .box .content p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 1rem 0;
+}
+/* --------------blogs ends  here */
 /* ********************************media queries */
 @media (max-width: 991px) {
   html {
